@@ -2,9 +2,6 @@
 # -*- coding:utf-8 -*-
 
 
-
-
-
 class NaiveFilter:
     """
     调用文件keywords中的敏感词汇来过滤，所有字符只用一个 * 代表
@@ -15,6 +12,7 @@ class NaiveFilter:
     >>> f.filter("hello sexy baby")
     hello * baby
     """
+
     def __init__(self):
         self.keywords = set([])
 
